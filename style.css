@@ -1,67 +1,54 @@
-.row {
-  width: 992px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 100px;
+/* Generals */
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-/* BLOCCO LEZIONI */
-#lezioni .row > .left, #lezioni .row > .right{
-  width: 50%;
-  float: left;
+body {
+  font-family: sans-serif;
 }
 
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
+section {
+  background: #5a7293;
+  padding-bottom: 50px;
 }
 
-#lezioni {
-  text-align: center;
+section:last-child {
+  padding-bottom: 0;
 }
 
-/* BLOCCO STEPS */
-#steps .row > .left,
-#steps .row > .central,
-#steps .row > .right{
-  float: left;
-  width: 33%;
+.container {
+  background: white;
+  padding: 20px 20px;
 }
 
-#steps{
-  text-align: center;
+h1 {
+  font-size: 2.5em;
 }
 
-/* BLOCCO PERCHE */
-#why {
-  text-align: center;
+img {
+  height: 150px;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
-#why .row > .first,
-#why .row > .second,
-#why .row > .third {
-  width: 100%;
-  margin-top: 80px;
+/* Section Lessons */
+#lezioni > .container:first-of-type {
+  border-radius: 0 0 5px 5px;
 }
 
-#why .row img {
+/* Sections steps */
+#steps > .container {
+  border-radius: 5px;
+}
+
+/* Section why */
+#why > .container:last-of-type {
+  border-radius: 5px 5px 0 0;
+}
+
+#why .col-lg-12 img {
   background-color:#428bca;
   border-radius:50%;
   padding:30px
-}
-
-/* COMMON */
-
-.container.grey{
-  background-color: #f9f9f9;
-}
-
-img{
-  height: 200px;
-}
-
-.clear {
-  clear:both;
 }
